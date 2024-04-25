@@ -1,5 +1,11 @@
 $(document).ready(function () {
     hentAlle();
+
+    $("#slettBillettene").click(function(){
+        $.get("/slettAlle",function(){
+            hentAlle();
+        });
+    });
 });
 
 function hentAlle() {
@@ -32,8 +38,3 @@ function slettEn(id){
     });
 }
 
-$("#slettBillettene").click(function(){
-    $.get("/slettAlle",function(){
-        hentAlle();
-    });
-});
