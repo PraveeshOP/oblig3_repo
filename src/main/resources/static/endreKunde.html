@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Endre Kunde</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="endreKunde.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form class="form">
+                <h2>Endre Kunde</h2>
+                <input type="text" id="id" hidden />
+                <div class="form-group">
+                    <label for="filmValg">Velg flim: </label><select id="filmValg" style="width: 360px; ">
+                    <option>Velg Film Her</option>
+                    <option>Anyone But You</option>
+                    <option>Argylle</option>
+                    <option>Bukkene Bruse på badeland</option>
+                    <option>Cem Karaca</option>
+                    <option>Dark Windows</option>
+                    <option>Dream Scenario</option>
+                    <option>Ender på eventyr</option>
+                    <option>Fest med Smurfene</option>
+                    <option>Fritt fall</option>
+                    <option>Jungelgjengen på Verdensturne</option>
+                    <option>Konvoi</option>
+                    <option>Lassie - På nye eventyr</option>
+                    <option>Mean Girls</option>
+                    <option>Miraklet i Gullspång</option>
+                    <option>Napoleon</option>
+                    <option>Perfect Days</option>
+                    <option>Poor Things</option>
+                    <option>Sau</option>
+                    <option>Superkompisene</option>
+                    <option>The Holdovers</option>
+                    <option>The Hunger Games: The Ballad of Songbirds and Snakes</option>
+                    <option>The Xone of Interest</option>
+                    <option>Vermin</option>
+                    <option>Wonka</option>
+                </select>
+                    <div id="filmValgError" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="antall">Antall</label>
+                    <input type="text" class="form-control" id="antall"/>
+                    <div id="antallError" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" class="form-control" id="fornavn"/>
+                    <div id="fornavnError" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" class="form-control" id="etternavn"/>
+                    <div id="etternavnError" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnr">Telefonnr</label>
+                    <input type="text" class="form-control" id="telefonnr"/>
+                    <div id="telefonError" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="epost">Epost</label>
+                    <input type="text" class="form-control" id="epost"/>
+                    <div id="epostError" style="color: red"></div>
+                </div>
+            </form>
+            <button class="btn btn-primary" onclick="endreKunden()">Endre</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
